@@ -1,0 +1,20 @@
+/* Comment Container Style */
+
+.comment-container {
+  padding: 1em 1.5em;
+  background-color: #fff;
+
+  .user {
+    margin-bottom: 0.5em;
+    color: #838383;
+
+    .name {
+      font-size: 1em;
+      margin-right: 0.75em;
+    }
+
+    .date {
+      font-size: 0.85em;
+    }
+  }
+}

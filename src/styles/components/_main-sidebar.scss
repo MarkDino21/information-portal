@@ -1,0 +1,55 @@
+/* Main Sidebar Component Style */
+
+.sidebar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+
+  .sidebar-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+
+    li {
+      list-style-type: none;
+
+      .active {
+        border: 1px solid #ddd;
+        font-weight: bold;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      align-items: center;
+      padding: 0.2rem 0.2rem;
+      border: 1px solid transparent;
+      border-radius: 0.25rem;
+
+      &:hover {
+        border: 1px solid #ddd;
+      }
+
+      span {
+        margin: 0px 10px;
+      }
+    }
+
+    .sidebar-title {
+      margin-bottom: 0.25rem;
+      font-weight: bold;
+      color: grey;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+/* Post Component Style */
+
+.post-container {
+  padding: 1.5em;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+
+  &:first-child {
+    border-radius: 4px 4px 0 0;
+  }
+
+  &:last-child {
+    border-radius: 0 0 4px 4px;
+  }
+
+  &:hover {
+    background-color: #f5f5f5;
+  }
+
+  .user {
+    margin-bottom: 1em;
+    color: #838383;
+
+    .name {
+      font-size: 1em;
+      margin-right: 0.75em;
+    }
+
+    .date {
+      font-size: 0.85em;
+    }
+  }
+
+  .message {
+    margin-bottom: 1.5em;
+    line-height: 1.25 * $base-line-height;
+  }
+
+  .actions {
+    color: #838383;
+    font-size: 0.95em;
+
+    .likes {
+      margin-right: 2em;
+
+      .number {
+        margin-left: 5px;
+      }
+
+      .pulse {
+        animation-name: pulse;
+        animation-duration: 0.25s;
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

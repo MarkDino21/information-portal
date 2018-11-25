@@ -4,7 +4,7 @@
   * Remove bullets and indents from lists
   */
 
-@mixin list-bare {
+.o-list-bare {
   margin: 0;
   list-style: none;
 }

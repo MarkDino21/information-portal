@@ -1,15 +1,13 @@
 import React from "react";
 
-import style from "../styles/components/header.module.scss";
-
 const Header = props => (
-  <header className={style.header}>
-    <div className={style.container}>
-      <div className={style.title}>{props.title}</div>
-      <nav className={style.nav}>
-        <li className={style.navItem}>Home</li>
-        <li className={style.navItem}>About</li>
-        <li className={style.navItem}>Contact</li>
+  <header className="header">
+    <div className="o-container o-flex o-flex--space-between header-wrapper">
+      <div className="header-title">{props.title}</div>
+      <nav className="o-list-bare">
+        <li className="header-nav-item">Home</li>
+        <li className="header-nav-item">About</li>
+        <li className="header-nav-item">Contact</li>
       </nav>
     </div>
   </header>

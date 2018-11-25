@@ -16,20 +16,25 @@
   flex: 1;
 }
 
-@mixin flex-center {
+.o-flex {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-@mixin flex-space-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  &--center {
+    justify-content: center;
+    align-items: center;
+  }
 
-@mixin flex-space-around {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  &--space-between {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--space-around {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &--column {
+    flex-direction: column;
+  }
 }
