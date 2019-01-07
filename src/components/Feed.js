@@ -1,6 +1,7 @@
 import React from "react";
 import Post from "./Post";
 import Comment from "./Comment";
+import AddPost from "./AddPost";
 
 const samplePosts = [
   {
@@ -65,10 +66,36 @@ class Feed extends React.Component {
       });
   };
 
+  handleTextareaChange = name => event =>
+    this.setState({
+      [name]: event.target.value
+    });
+
+  handleAddPostClick = () => {
+    const { posts, newPost } = this.state;
+    posts.push({
+      id: Math.random(),
+      name: "Admin",
+      message: newPost,
+      date: Date(),
+      likes: 0,
+      comments: []
+    });
+    this.setState({
+      posts,
+      newPost: ""
+    });
+  };
+
   render() {
     const { posts } = this.state;
     return (
       <div className="o-container feed-container">
+        <AddPost
+          onChange={this.handleTextareaChange("newPost")}
+          onClick={this.handleAddPostClick}
+          hasNoPost={!this.state.newPost}
+        />
         {posts.length === 0 ? (
           <p>Loading...</p>
         ) : (

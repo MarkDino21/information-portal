@@ -18,6 +18,7 @@
 @import "objects/container";
 @import "objects/layout";
 @import "objects/list-bare";
+@import "objects/button";
 
 /* Components */
 @import "components/header";
@@ -25,6 +26,8 @@
 @import "components/post";
 @import "components/comment";
 @import "components/main-sidebar";
+@import "components/app";
+@import "components/add-post";
 
 /* Utilities */
 @import "utilities/display";

@@ -1,0 +1,19 @@
+/* Add Post Form Style */
+
+.post-form-container {
+  padding: 1em;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .post-input {
+    width: 100%;
+  }
+
+  .btn {
+    margin-top: 0.75em;
+  }
+}

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "./components/Header";
+import MainSidebar from "./components/MainSidebar";
 import Feed from "./components/Feed";
 
 import "./styles/main.scss";
@@ -11,7 +12,14 @@ class App extends Component {
     return (
       <div>
         <Header title={siteMetadata.title} />
-        <Feed />
+        <section className="o-container o-flex main">
+          <div className="o-flex--basis-30">
+            <MainSidebar />
+          </div>
+          <div className="feed">
+            <Feed />
+          </div>
+        </section>
       </div>
     );
   }

@@ -8,9 +8,7 @@
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 
   .sidebar-body {
@@ -23,7 +21,8 @@
       list-style-type: none;
 
       .active {
-        border: 1px solid #ddd;
+        border: 1px solid rgba($color: #000000, $alpha: 0.125);
+        background: rgba($color: #ffffff, $alpha: 0.4);
         font-weight: bold;
       }
     }
@@ -38,7 +37,8 @@
       border-radius: 0.25rem;
 
       &:hover {
-        border: 1px solid #ddd;
+        border: 1px solid rgba($color: #000000, $alpha: 0.125);
+        background: rgba($color: #ffffff, $alpha: 0.4);
       }
 
       span {
