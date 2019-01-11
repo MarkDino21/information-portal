@@ -24,10 +24,29 @@
     color: #fff;
     background-color: $base-primary-color;
     border-color: $base-primary-color;
+    text-decoration: none;
 
     &:hover {
       background-color: #0069d9;
       border-color: #0062cc;
+    }
+
+    &:focus {
+      outline: $base-primary-color;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+      border-radius: 1.25em;
+    }
+  }
+
+  &-secondary {
+    color: #fff;
+    background-color: #4267b2;
+    border-color: #29487d;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #365899;
+      border-color: #29487d;
     }
 
     &:focus {

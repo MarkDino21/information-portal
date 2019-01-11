@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import { Router } from "@reach/router";
 import Header from "./components/Header";
-import MainSidebar from "./components/MainSidebar";
-import Feed from "./components/Feed";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import NotFound from "./pages/404";
 
 import "./styles/main.scss";
 
@@ -12,14 +14,11 @@ class App extends Component {
     return (
       <div>
         <Header title={siteMetadata.title} />
-        <section className="o-container o-flex main">
-          <div className="o-flex--basis-30">
-            <MainSidebar />
-          </div>
-          <div className="feed">
-            <Feed />
-          </div>
-        </section>
+        <Router>
+          <Home path="/" />
+          <Login path="login" />
+          <NotFound default />
+        </Router>
       </div>
     );
   }

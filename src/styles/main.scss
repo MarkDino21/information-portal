@@ -27,8 +27,11 @@
 @import "components/post";
 @import "components/comment";
 @import "components/main-sidebar";
-@import "components/app";
 @import "components/add-post";
+
+/* Pages */
+@import "components/home";
+@import "components/login";
 
 /* Utilities */
 @import "utilities/display";

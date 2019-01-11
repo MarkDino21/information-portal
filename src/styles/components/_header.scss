@@ -11,10 +11,18 @@
   &-title {
     font-size: 1.75em;
     font-weight: bold;
+
+    &-link {
+      text-decoration: none;
+
+      &:visited {
+        color: inherit;
+      }
+    }
   }
 
   &-nav-item {
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 2em;
   }
 }
