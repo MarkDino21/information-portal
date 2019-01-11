@@ -6,26 +6,20 @@ class MainSidebar extends React.Component {
   render() {
     return (
       <section className="sidebar">
-        <main className="sidebar-body">
-          <ul className="o-list-bare">
-            <li>
-              <a href="" className="active">
-                <HomeSVG />
-                <span>Home</span>
-              </a>
-            </li>
-          </ul>
+        <ul className="o-list-bare">
+          <li className="sidebar-item sidebar-item-active">
+            <HomeSVG />
+            <span className="sidebar-item-title">Home</span>
+          </li>
+        </ul>
 
-          <ul className="o-list-bare">
-            <header className="sidebar-title">Forms</header>
-            <li>
-              <a href="">
-                <FileTextSVG />
-                <span>Request Grades</span>
-              </a>
-            </li>
-          </ul>
-        </main>
+        <ul className="o-list-bare">
+          <div className="sidebar-title">Forms</div>
+          <li className="sidebar-item">
+            <FileTextSVG />
+            <span className="sidebar-item-title">Request Grades</span>
+          </li>
+        </ul>
       </section>
     );
   }

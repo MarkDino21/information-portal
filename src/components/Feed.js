@@ -73,7 +73,7 @@ class Feed extends React.Component {
 
   handleAddPostClick = () => {
     const { posts, newPost } = this.state;
-    posts.push({
+    posts.unshift({
       id: Math.random(),
       name: "Admin",
       message: newPost,
@@ -95,6 +95,7 @@ class Feed extends React.Component {
           onChange={this.handleTextareaChange("newPost")}
           onClick={this.handleAddPostClick}
           hasNoPost={!this.state.newPost}
+          newPost={this.state.newPost}
         />
         {posts.length === 0 ? (
           <p>Loading...</p>
